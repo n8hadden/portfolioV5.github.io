@@ -1,0 +1,177 @@
+:root {
+    /* Variables */
+    --headerBlue: #0075ff;
+    --headerPurple: #440137;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.root {
+    background-color: #0e0e0e;
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+@media only screen and (min-width: 320px) {
+    header {
+        height: 3rem;
+        padding: .8rem;
+        font-size: 1.3rem;
+    }
+
+    .linkContainer {
+        padding: 0.3rem;
+        gap: 2rem;
+        font-size: 1rem;
+    }
+
+    .infoContainer {
+        margin-inline: 5rem;
+    }
+
+    .infoContainer > h2 {
+        font-size: 1rem;
+    }
+
+    .infoContainer > p {
+        font-size: 0.5rem;
+    }
+
+    footer > p {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        height: 5rem;
+        padding: 1.3rem;
+        font-size: 2rem;
+    }
+
+    .linkContainer {
+        padding: 0.5rem;
+        gap: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .infoContainer {
+        margin-inline: 10rem;
+    }
+
+    .infoContainer > h2 {
+        font-size: 2rem;
+    }
+
+    .infoContainer > p {
+        font-size: 1rem;
+    }
+
+    footer > p {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    header {
+        height: 7rem;
+        padding: 1.8rem;
+        font-size: 3rem;
+    }
+
+    .linkContainer {
+        padding: 0.8rem;
+        gap: 2rem;
+        font-size: 2rem;
+    }
+    .infoContainer {
+        margin-inline: 15rem;
+    }
+
+    .infoContainer > h2 {
+        font-size: 3rem;
+    }
+
+    .infoContainer > p {
+        font-size: 1.5rem;
+    }
+
+    footer > p {
+        font-size: 1.8rem;
+    }
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    top: 0;
+    background-image: linear-gradient(to right, var(--headerBlue), var(--headerPurple));
+    font-family: 'Bruno Ace SC';
+    color: white;
+}
+
+.linkContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.linkContainer > a {
+    text-decoration: none;
+    color: #fff;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.linkContainer > a:hover {
+    background-color: #000;
+    transition: .3s;
+}
+
+.mainContent {
+    min-height: 65vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    gap: 5rem;
+    font-family: 'PT Serif', serif;
+    margin: 5rem 0px 5rem 0px;
+}
+
+
+
+.infoContainer > hr {
+    background-color: #0075ff;
+    border-color: #0075ff;
+    height: 2px;
+    margin: 2vh 0 2vh;
+}
+
+footer {
+    width: 100%;
+    height: 20vh;
+    padding: 4vw;
+    background-image: linear-gradient(to right, var(--headerBlue), var(--headerPurple));
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;
+    display: grid;
+}
+
+footer > p {
+    place-self: center;
+}
