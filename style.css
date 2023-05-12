@@ -277,7 +277,7 @@ header {
 
 .infoContainer > hr {
     background-color: var(--headerPurple) ;
-    border-color: #440137 var(--headerPurple) ;
+    border-color: var(--headerPurple) ;
     height: 2px;
     margin: 2vh 0 2vh;
 }
